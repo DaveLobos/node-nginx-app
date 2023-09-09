@@ -1,6 +1,6 @@
 const http = require('http');
 
-const page = `
+const html = `
 <html>
 <head>
 <title>It works!</title>
@@ -12,6 +12,6 @@ const page = `
 
 http.createServer((req, res) => {
   res.statusCode = 404;
-  res.end(page);
+  res.end(html);
 })
   .listen(3000, "0.0.0.0");
