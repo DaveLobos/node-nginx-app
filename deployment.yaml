@@ -1,0 +1,27 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app
+spec:
+  selector:
+    matchLabels:
+      app: app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: app
+    spec:
+      dnsConfig:
+        nameservers:
+        - 8.8.8.8
+        - 8.8.4.4
+      containers:
+      - name: node
+        image: my-app-node:latest
+        ports:
+        - containerPort: 3000
+      - name: nginx
+        image: my-app-nginx:latest
+        ports:
+        - containerPort: 80

@@ -1,0 +1,14 @@
+apiVersion: skaffold/v2beta7
+kind: Config
+metadata:
+  name: app
+build:
+  artifacts:
+  - image: my-app-node
+    context: node
+  - image: my-app-nginx
+    context: nginx
+deploy:
+  kubectl:
+    manifests:
+    - deployment.yaml
