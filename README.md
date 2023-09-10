@@ -1,25 +1,40 @@
-# node-nginx-app
-Foundation code to build a containerized NodeJS application with Nginx as a reverse proxy.
+# Node-Nginx-App with Minikube and Skaffold
 
-Pre requisites
+## Overview
 
-Docker, Minikube and Skaffold
+This project serves as a guide to setting up a local development environment using Minikube, NodeJS, and Nginx. 
 
-Quickstart
+## Requirements
 
-1 - Clone this repository and start the application
+- Docker
+- Minikube
+- Skaffold
 
-    $ git clone https://github.com/DaveLobos/node-nginx-app.git
-    $ cd node-nginx-app
-    $ minikube start
-    $ skaffold dev
+## Getting Started
 
-2 - Expose the application port to the host machine
+1. Clone the repository.
+    ```
+    git clone https://github.com/DaveLobos/node-nginx-app.git
+    ```
+2. Change into the project directory.
+    ```
+    cd node-nginx-app
+    ```
+3. Start Minikube.
+    ```
+    minikube start
+    ```
+4. Run Skaffold.
+    ```
+    skaffold dev
+    ```
 
-    $ kubectl expose deployment app --type=LoadBalancer --port=8080 --name http-server
+For more details, check out the [blog post](Link_to_your_blog_post).
 
-3 - Find out the Minikube IP address
+## Contributing
 
-    $ minikube ip
+Feel free to contribute to this project by submitting pull requests or opening issues.
 
-The web application is running and accessible at http://[minikube ip]:8080/
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
