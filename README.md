@@ -29,7 +29,7 @@ This project serves as a guide to setting up a local development environment usi
     skaffold dev
     ```
 
-For more details, check out the [blog post](Link_to_your_blog_post).
+For more details, check out the [blog post](https://davelobos.dev/en/2023-09-07-local-development-stack-with-minikube-nodejs-nginx).
 
 ## Contributing
 
