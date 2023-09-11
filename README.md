@@ -31,10 +31,6 @@ This project serves as a guide to setting up a local development environment usi
 
 For more details, check out the [blog post](https://davelobos.dev/en/2023-09-07-local-development-stack-with-minikube-nodejs-nginx).
 
-## Contributing
-
-Feel free to contribute to this project by submitting pull requests or opening issues.
-
 ## License
 
 This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for details.
