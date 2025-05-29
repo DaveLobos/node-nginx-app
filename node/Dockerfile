@@ -4,4 +4,4 @@ WORKDIR /usr/src
 
 COPY app ./app/
 
-CMD [ "node", "./app/main.js" ]
+ENTRYPOINT [ "node", "./app/main.js" ]
