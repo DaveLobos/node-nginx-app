@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project serves as a guide to setting up a local development environment using Minikube, NodeJS, and Nginx. 
+This project serves as a template to setup a local development environment using Minikube, Skaffold, NodeJS, and Nginx.
 
 ## Requirements
 
@@ -10,7 +10,7 @@ This project serves as a guide to setting up a local development environment usi
 - Minikube
 - Skaffold
 
-## Getting Started
+## Quickstart
 
 1. Clone the repository.
     ```
@@ -28,9 +28,9 @@ This project serves as a guide to setting up a local development environment usi
     ```
     skaffold dev
     ```
+5. Expose the application port.
+    ```
+    kubectl expose deployment app --type=LoadBalancer --port=8080 --name node-nginx-app
+    ```
 
 For more details, check out the [blog post](https://davelobos.dev/en/2023-09-07-local-development-stack-with-minikube-nodejs-nginx).
-
-## License
-
-This project is licensed under the GNU General Public License. See the [LICENSE](LICENSE) file for details.
