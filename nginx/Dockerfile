@@ -2,4 +2,4 @@ FROM nginx:alpine
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 
-COPY public /usr/share/nginx/public/
+COPY static /usr/share/nginx/static/
