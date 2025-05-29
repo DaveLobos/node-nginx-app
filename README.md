@@ -2,7 +2,7 @@
 
 ## Overview
 
-This project serves as a template to setup a local development environment using Minikube, Skaffold, NodeJS, and Nginx.
+This project serves as a template to setup a containerized local NodeJS development environment with Nginx as a reverse proxy using Minikube and Skaffold for hot-reloading.
 
 ## Requirements
 
@@ -33,4 +33,4 @@ This project serves as a template to setup a local development environment using
     kubectl expose deployment app --type=LoadBalancer --port=8080 --name node-nginx-app
     ```
 
-For more details, check out the [blog post](https://davelobos.dev/en/2023-09-07-local-development-stack-with-minikube-nodejs-nginx).
+For more details, check out the [blog post on davelobos.dev](https://davelobos.dev/en/2023-09-07-local-development-stack-with-minikube-nodejs-nginx).
